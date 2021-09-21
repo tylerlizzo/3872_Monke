@@ -623,7 +623,7 @@ F 3 "" H 850 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-AnalogIC:TPA2005D1DRB U4
+L monkey_arduino_shield-rescue:TPA2005D1DRB-SparkFun-AnalogIC U4
 U 1 1 614A0425
 P 6100 3100
 F 0 "U4" H 6150 3565 50  0000 C CNN
@@ -798,4 +798,127 @@ Wire Wire Line
 	4600 3050 4300 3050
 Wire Wire Line
 	4300 3050 4300 3000
+$Comp
+L Connector:Barrel_Jack J2
+U 1 1 614A55C8
+P 800 4400
+F 0 "J2" H 857 4725 50  0000 C CNN
+F 1 "Barrel_Jack" H 857 4634 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 850 4360 50  0001 C CNN
+F 3 "~" H 850 4360 50  0001 C CNN
+	1    800  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D1
+U 1 1 614A714C
+P 1350 4300
+F 0 "D1" H 1350 4083 50  0000 C CNN
+F 1 "B5819W" H 1350 4174 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 1350 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1350 4300 50  0001 C CNN
+	1    1350 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 614A8763
+P 1900 4300
+F 0 "FB1" V 1663 4300 50  0000 C CNN
+F 1 "100 Ohm @ 100 MHz" V 1754 4300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0201_0603Metric" V 1830 4300 50  0001 C CNN
+F 3 "~" H 1900 4300 50  0001 C CNN
+	1    1900 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse_Small F1
+U 1 1 614A952C
+P 2350 4300
+F 0 "F1" H 2350 4485 50  0000 C CNN
+F 1 "500mA" H 2350 4394 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 2350 4300 50  0001 C CNN
+F 3 "~" H 2350 4300 50  0001 C CNN
+	1    2350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-5.0 U5
+U 1 1 614AA01B
+P 2950 4300
+F 0 "U5" H 2950 4542 50  0000 C CNN
+F 1 "AMS1117-5.0" H 2950 4451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2950 4500 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3050 4050 50  0001 C CNN
+	1    2950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4300 1200 4300
+Wire Wire Line
+	1500 4300 1800 4300
+Wire Wire Line
+	2000 4300 2250 4300
+Wire Wire Line
+	2450 4300 2550 4300
+$Comp
+L Device:CP_Small C3
+U 1 1 614C7832
+P 2550 4400
+F 0 "C3" H 2638 4446 50  0000 L CNN
+F 1 "10u" H 2638 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2550 4400 50  0001 C CNN
+F 3 "~" H 2550 4400 50  0001 C CNN
+	1    2550 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 4300
+Wire Wire Line
+	2550 4300 2650 4300
+$Comp
+L Device:CP_Small C4
+U 1 1 614C8737
+P 3400 4400
+F 0 "C4" H 3488 4446 50  0000 L CNN
+F 1 "10u" H 3488 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3400 4400 50  0001 C CNN
+F 3 "~" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4300 3400 4300
+Wire Wire Line
+	2950 4600 3400 4600
+Wire Wire Line
+	3400 4600 3400 4500
+Wire Wire Line
+	2950 4600 2550 4600
+Wire Wire Line
+	2550 4600 2550 4500
+Connection ~ 2950 4600
+$Comp
+L power:GND #PWR0124
+U 1 1 614D1996
+P 2950 4600
+F 0 "#PWR0124" H 2950 4350 50  0001 C CNN
+F 1 "GND" H 2955 4427 50  0000 C CNN
+F 2 "" H 2950 4600 50  0001 C CNN
+F 3 "" H 2950 4600 50  0001 C CNN
+	1    2950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 614D1D87
+P 1100 4500
+F 0 "#PWR0125" H 1100 4250 50  0001 C CNN
+F 1 "GND" H 1105 4327 50  0000 C CNN
+F 2 "" H 1100 4500 50  0001 C CNN
+F 3 "" H 1100 4500 50  0001 C CNN
+	1    1100 4500
+	1    0    0    -1  
+$EndComp
+Text Label 3400 4300 0    50   ~ 0
+Vin
 $EndSCHEMATC
