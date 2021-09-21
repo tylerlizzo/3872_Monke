@@ -1,15 +1,15 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x01
+# Connector_Generic_Conn_01x01
 #
-DEF Connector_Generic:Conn_01x01 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x01" 0 -100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 5 0 -5 1 1 6 N
@@ -18,11 +18,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x06
+# Connector_Generic_Conn_01x06
 #
-DEF Connector_Generic:Conn_01x06 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic:Conn_01x06" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -45,11 +45,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x08
+# Connector_Generic_Conn_01x08
 #
-DEF Connector_Generic:Conn_01x08 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x08 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector_Generic:Conn_01x08" 0 -500 50 H V C CNN
+F1 "Connector_Generic_Conn_01x08" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -76,11 +76,11 @@ X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x10
+# Connector_Generic_Conn_01x10
 #
-DEF Connector_Generic:Conn_01x10 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x10 J 0 40 Y N 1 F N
 F0 "J" 0 500 50 H V C CNN
-F1 "Connector_Generic:Conn_01x10" 0 -600 50 H V C CNN
+F1 "Connector_Generic_Conn_01x10" 0 -600 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -111,11 +111,190 @@ X Pin_9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# Connector_Screw_Terminal_01x02
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x03
+#
+DEF Connector_Screw_Terminal_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+C 0 100 25 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -21 113 13 80 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+P 2 1 1 6 -14 120 20 87 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Logic_LevelTranslator_SN74LVC2T45DCUR
+#
+DEF Logic_LevelTranslator_SN74LVC2T45DCUR U 0 20 Y Y 1 F N
+F0 "U" -250 450 50 H V C CNN
+F1 "Logic_LevelTranslator_SN74LVC2T45DCUR" 150 450 50 H V L CNN
+F2 "Package_SO:VSSOP-8_2.4x2.1mm_P0.5mm" 50 -550 50 H I C CNN
+F3 "" -900 -550 50 H I C CNN
+$FPLIST
+ VSSOP*2.4x2.1mm*P0.5mm*
+$ENDFPLIST
+DRAW
+S -300 400 300 -400 0 1 10 f
+P 3 0 1 0 -100 100 -100 140 -30 140 N
+P 3 0 1 0 110 100 110 60 40 60 N
+P 4 0 1 0 -30 60 -100 60 -100 100 -180 100 N
+P 4 0 1 0 -30 100 -30 180 40 140 -30 100 N
+P 4 0 1 0 40 140 110 140 110 100 160 100 N
+P 5 0 1 0 40 100 40 30 40 20 -30 60 40 100 N
+P 3 1 1 0 -100 -100 -100 -60 -30 -60 N
+P 3 1 1 0 110 -100 110 -140 40 -140 N
+P 4 1 1 0 -30 -140 -100 -140 -100 -100 -180 -100 N
+P 4 1 1 0 -30 -100 -30 -20 40 -60 -30 -100 N
+P 4 1 1 0 40 -60 110 -60 110 -100 160 -100 N
+P 5 1 1 0 40 -100 40 -170 40 -180 -30 -140 40 -100 N
+X VCCA 1 -100 500 100 D 50 50 1 1 W
+X A1 2 -400 100 100 R 50 50 1 1 B
+X A2 3 -400 -100 100 R 50 50 1 1 B
+X GND 4 0 -500 100 U 50 50 1 1 W
+X DIR 5 -400 -300 100 R 50 50 1 1 I
+X B2 6 400 -100 100 L 50 50 1 1 B
+X B1 7 400 100 100 L 50 50 1 1 B
+X VCCB 8 100 500 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Memory_Flash_W25Q128JVS
+#
+DEF Memory_Flash_W25Q128JVS U 0 20 Y Y 1 F N
+F0 "U" -350 350 50 H V C CNN
+F1 "Memory_Flash_W25Q128JVS" 300 350 50 H V C CNN
+F2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS W25Q128JVS
+$FPLIST
+ SOIC*5.23x5.23mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S -400 300 400 -300 0 1 10 f
+X ~CS 1 -500 100 100 R 50 50 1 1 I
+X DO(IO1) 2 500 100 100 L 50 50 1 1 B
+X IO2 3 500 -100 100 L 50 50 1 1 B
+X GND 4 0 -400 100 U 50 50 1 1 W
+X DI(IO0) 5 500 200 100 L 50 50 1 1 B
+X CLK 6 -500 -100 100 R 50 50 1 1 I
+X IO3 7 500 -200 100 L 50 50 1 1 B
+X VCC 8 0 400 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# SparkFun-AnalogIC_TPA2005D1DRB
+#
+DEF SparkFun-AnalogIC_TPA2005D1DRB U 0 40 Y Y 1 L N
+F0 "U" 500 -500 50 H V R TNN
+F1 "SparkFun-AnalogIC_TPA2005D1DRB" -400 400 50 H V R TNN
+F2 "QFN-8_PAD" 30 150 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *QFN-8_PAD*
+$ENDFPLIST
+DRAW
+T 0 -185 -295 50 0 1 0 "GND PAD" Normal 0 C C
+P 2 1 0 0 -400 -400 0 -400 N
+P 2 1 0 0 -400 -200 -400 -400 N
+P 2 1 0 0 -400 -200 0 -200 N
+P 2 1 0 0 -400 300 -400 -200 N
+P 2 1 0 0 0 -400 500 -400 N
+P 2 1 0 0 0 -200 0 -400 N
+P 2 1 0 0 500 -400 500 300 N
+P 2 1 0 0 500 300 -400 300 N
+X SHUTDOWN 1 -600 200 200 R 40 40 1 1 I I
+X GND 10 -200 -500 100 U 40 40 1 1 W N
+X GND 11 -200 -500 100 U 40 40 1 1 W N
+X GND 12 -200 -500 100 U 40 40 1 1 W N
+X GND 13 -200 -500 100 U 40 40 1 1 W N
+X IN+ 3 -600 0 200 R 40 40 1 1 B
+X IN- 4 -600 -100 200 R 40 40 1 1 B
+X OUT+ 5 700 0 200 L 40 40 1 1 B
+X VDD 6 700 200 200 L 40 40 1 1 W
+X GND 7 700 -300 200 L 40 40 1 1 W
+X OUT- 8 700 -100 200 L 40 40 1 1 B
+X GND 9 -200 -500 100 U 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -127,11 +306,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -142,11 +321,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
